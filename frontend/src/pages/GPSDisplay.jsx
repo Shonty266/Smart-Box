@@ -52,7 +52,7 @@ const GPSDisplay = () => {
   // Function to fetch location from API
   const fetchLocation = async () => {
     try {
-      const response = await fetch('http://localhost:8080/receivedlocation/gps'); // Fetch from your API
+      const response = await fetch('https://smart-box-sf8b.onrender.com/receivedlocation/gps'); // Fetch from your API
       if (!response.ok) {
         throw new Error('Failed to fetch location data');
       }

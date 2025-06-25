@@ -69,7 +69,7 @@ function Checkout() {
 
 
     try {
-      const serverResponse = await fetch('http://localhost:8080/auth/createorder', {
+      const serverResponse = await fetch('https://smart-box-sf8b.onrender.com/auth/createorder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

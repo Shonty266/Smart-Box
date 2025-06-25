@@ -26,7 +26,7 @@ function AllDeliveryBoys() {
     useEffect(() => {
         const fetchDeliveryBoys = async () => {
             try {
-                const response = await fetch('http://localhost:8080/auth/alldeliveryboys', {
+                const response = await fetch('https://smart-box-sf8b.onrender.com/auth/alldeliveryboys', {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }
@@ -57,7 +57,7 @@ function AllDeliveryBoys() {
     const confirmDelete = async () => {
         if (boyToDelete) {
             try {
-                const response = await fetch(`http://localhost:8080/auth/deletedeliveryboy/${boyToDelete._id}`, {
+                const response = await fetch(`https://smart-box-sf8b.onrender.com/auth/deletedeliveryboy/${boyToDelete._id}`, {
                     method: 'DELETE',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`

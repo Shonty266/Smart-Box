@@ -69,7 +69,7 @@ function Home() {
   useEffect(() => {
     const fetchBoxes = async () => {
       try {
-        const response = await fetch('http://localhost:8080/auth/allproductsforuser', {
+        const response = await fetch('https://smart-box-sf8b.onrender.com/auth/allproductsforuser', {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }

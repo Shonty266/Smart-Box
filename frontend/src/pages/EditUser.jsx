@@ -38,7 +38,7 @@ const EditUser = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:8080/auth/userprofile/${id}`, {
+        const response = await fetch(`https://smart-box-sf8b.onrender.com/auth/userprofile/${id}`, {
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
@@ -78,7 +78,7 @@ const EditUser = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:8080/auth/edituser/${id}`, {
+      const response = await fetch(`https://smart-box-sf8b.onrender.com/auth/edituser/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

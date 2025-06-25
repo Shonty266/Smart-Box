@@ -20,7 +20,7 @@ function DeliveryBoyProfile() {
     useEffect(() => {  
         const fetchDeliveryBoyData = async () => {  
             try {  
-                const response = await fetch(`http://localhost:8080/auth/deliveryboyprofile/${deliveryBoyId}`, {  
+                const response = await fetch(`https://smart-box-sf8b.onrender.com/auth/deliveryboyprofile/${deliveryBoyId}`, {  
                     headers: {  
                         'Authorization': `Bearer ${localStorage.getItem('token')}`,  
                     },  

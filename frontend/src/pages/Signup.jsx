@@ -41,7 +41,7 @@ function Signup() {
         setLoading(true); // Start loading
 
         try {
-            const url = 'http://localhost:8080/auth/signup'; // Updated API endpoint
+            const url = 'https://smart-box-sf8b.onrender.com/auth/signup'; // Updated API endpoint
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
@@ -70,7 +70,7 @@ function Signup() {
         setLoading(true); // Start loading
 
         try {
-            const url = 'http://localhost:8080/auth/verifysignup'; // API endpoint for OTP verification
+            const url = 'https://smart-box-sf8b.onrender.com/auth/verifysignup'; // API endpoint for OTP verification
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
