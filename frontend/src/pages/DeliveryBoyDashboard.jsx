@@ -126,7 +126,7 @@ function DeliveryBoyDashboard() {
         toast.success(`Order status updated to ${newStatus}`);
     
         try {
-            const response = await fetch(`https://smart-box-sf8b.onrender.com/auth/allorders/${orderId}/status`, {
+            const response = await fetch(`https://smart-box-sf8b.onrender.com//auth/allorders/${orderId}/status`, {
                 method: 'PATCH',
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem('token')}`,
