@@ -73,7 +73,7 @@ const UnlockReceiver = () => {
         }
 
         const scriptData = await scriptResponse.json();
-        console.log('Script response:', scriptData);
+        ('Script response:', scriptData);
 
         // Step 3: Show a message instructing the user to show the QR code to the camera
 

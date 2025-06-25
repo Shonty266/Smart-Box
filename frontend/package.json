@@ -13,6 +13,7 @@
     "@react-google-maps/api": "^2.19.3",
     "@react-leaflet/core": "^2.1.0",
     "axios": "^1.7.7",
+    "backend": "file:..",
     "jwt-decode": "^4.0.0",
     "leaflet": "^1.9.4",
     "leaflet-control-geocoder": "^2.4.0",

@@ -8,7 +8,7 @@ const http = require('http'); // Ensure this is included
 const { exec, spawn } = require('child_process');
 const nodemailer = require('nodemailer');
 const { Console } = require('console');
-
+const path = require('path');
 
 
 require('dotenv').config();
@@ -17,6 +17,7 @@ require('./models/db');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+const _dirname = path.resolve();
 
 app.use(bodyParser.json({ limit: '50mb' })); 
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
@@ -29,6 +30,10 @@ app.get('/ping', (req, res) => {
 
 app.use('/auth', authRouter);
 
+app.use(express.static(path.join(_dirname, "/frontend/dist")));
+app.get('*', (_, res) => {
+    res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
+});
 
 let latestGpsData = { latitude: null, longitude: null, unique_key: null };
 
