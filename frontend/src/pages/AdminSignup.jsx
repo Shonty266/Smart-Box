@@ -29,7 +29,7 @@ function AdminSignup() {
             return handleError('Name, email, and password are required');
         }
         try {
-            const url = `http://localhost:8080/auth/adminsignup`;
+            const url = `https://smart-box-sf8b.onrender.com/auth/adminsignup`;
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

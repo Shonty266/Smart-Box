@@ -48,7 +48,7 @@ function AdminDashboard() {
         const fetchCounts = async () => {
             try {
                 // Fetch user count
-                const userResponse = await fetch('http://localhost:8080/auth/fetchusercount', {
+                const userResponse = await fetch('https://smart-box-sf8b.onrender.com/auth/fetchusercount', {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`
                     }

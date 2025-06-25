@@ -20,7 +20,7 @@ function AddProduct() {
         }
 
         try {
-            const response = await fetch('http://localhost:8080/auth/createproduct', {
+            const response = await fetch('https://smart-box-sf8b.onrender.com/auth/createproduct', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
